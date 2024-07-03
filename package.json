@@ -9,12 +9,14 @@
 			"make -C src gen",
 			"make -C src dep",
 			"make -C src opt",
-			"make -C src byte"
+			"make -C src byte",
+			"make -C src ba",
+			"make -C src baopt"
 		],
 		"buildsInSource": true,
 		"install": [
-			"make -C src install DESTDIR='#{self.install}'",
-			"make -C src install_h DESTDIR='#{self.install}'"
+			"make -C src install DESTDIR='#{self.install}/lib/sdl2/'",
+			"make -C src install_h DESTDIR='#{self.install}/lib/sdl2/'"
 		]
 	},
 	"dependencies": {
