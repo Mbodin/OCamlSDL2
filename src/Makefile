@@ -22,8 +22,8 @@ CC_MM = gcc -MM -I $(OCAMLDIR) $(CFLAGS)
 DIRSEP = $(shell $(OCAML) dir_sep.ml)
 BINDINGS_DIR = sdl2
 PREFIX = 
-DESTDIR = $(PREFIX)$(DIRSEP)$(OCAMLDIR)$(DIRSEP)$(BINDINGS_DIR)
-DESTDIR_H = $(DESTDIR)$(DIRSEP)include
+DESTDIR ?= $(PREFIX)$(DIRSEP)$(OCAMLDIR)$(DIRSEP)$(BINDINGS_DIR)
+DESTDIR_H ?= $(DESTDIR)$(DIRSEP)include
 # This is defined only after make findinstall
 OCAMLFINDDESTDIR_H = $(shell $(OCAMLFIND) query sdl2)$(DIRSEP)include
 UNINSTALL_DIR = rm -Rf
