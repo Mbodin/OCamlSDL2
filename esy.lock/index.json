@@ -1,0 +1,317 @@
+{
+  "checksum": "f1dec5840b49e0a1a60d6259b765b481",
+  "root": "ocamlsdl2@link-dev:./package.json",
+  "node": {
+    "ocamlsdl2@link-dev:./package.json": {
+      "id": "ocamlsdl2@link-dev:./package.json",
+      "name": "ocamlsdl2",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.14.1000@d41d8cd9", "@opam/ocamlfind@opam:1.9.3@6f4741ee",
+        "@opam/conf-sdl2@opam:1@40903048"
+      ],
+      "devDependencies": []
+    },
+    "ocaml@4.14.1000@d41d8cd9": {
+      "id": "ocaml@4.14.1000@d41d8cd9",
+      "name": "ocaml",
+      "version": "4.14.1000",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.14.1000.tgz#sha1:e38fabe6bcf42774bd2340e67a8803ee7cebdb9f"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-pkg-config@0.29.2002@d41d8cd9": {
+      "id": "esy-pkg-config@0.29.2002@d41d8cd9",
+      "name": "esy-pkg-config",
+      "version": "0.29.2002",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/esy-pkg-config/-/esy-pkg-config-0.29.2002.tgz#sha1:a629182b81f03cc192f1c6e5b356b416d3479901"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "@opam/ocamlfind@opam:1.9.3@6f4741ee": {
+      "id": "@opam/ocamlfind@opam:1.9.3@6f4741ee",
+      "name": "@opam/ocamlfind",
+      "version": "opam:1.9.3",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/24/24047dd8a0da5322253de9b7aa254e42#md5:24047dd8a0da5322253de9b7aa254e42",
+          "archive:http://download.camlcity.org/download/findlib-1.9.3.tar.gz#md5:24047dd8a0da5322253de9b7aa254e42"
+        ],
+        "opam": {
+          "name": "ocamlfind",
+          "version": "1.9.3",
+          "path": "esy.lock/opam/ocamlfind.1.9.3"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__ocamlfind_opam__c__1.9.3_opam_override"
+        }
+      ],
+      "dependencies": [
+        "ocaml@4.14.1000@d41d8cd9", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "ocaml@4.14.1000@d41d8cd9" ]
+    },
+    "@opam/msys2-mingw64@opam:1@87757bbf": {
+      "id": "@opam/msys2-mingw64@opam:1@87757bbf",
+      "name": "@opam/msys2-mingw64",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "msys2-mingw64",
+          "version": "1",
+          "path": "esy.lock/opam/msys2-mingw64.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__msys2_mingw64_opam__c__1_opam_override"
+        }
+      ],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/msys2-mingw32@opam:1@3e920f82": {
+      "id": "@opam/msys2-mingw32@opam:1@3e920f82",
+      "name": "@opam/msys2-mingw32",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "msys2-mingw32",
+          "version": "1",
+          "path": "esy.lock/opam/msys2-mingw32.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__msys2_mingw32_opam__c__1_opam_override"
+        }
+      ],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/msys2@opam:0.1.0@9a30ef2c": {
+      "id": "@opam/msys2@opam:0.1.0@9a30ef2c",
+      "name": "@opam/msys2",
+      "version": "opam:0.1.0",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/95/9532eb3711376d8437d95abbf91875755a933882ec58b4b5f2318e8a1d6f312c#sha256:9532eb3711376d8437d95abbf91875755a933882ec58b4b5f2318e8a1d6f312c",
+          "archive:https://github.com/dra27/msys2-opam/archive/refs/tags/0.1.0.tar.gz#sha256:9532eb3711376d8437d95abbf91875755a933882ec58b4b5f2318e8a1d6f312c"
+        ],
+        "opam": {
+          "name": "msys2",
+          "version": "0.1.0",
+          "path": "esy.lock/opam/msys2.0.1.0"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__msys2_opam__c__0.1.0_opam_override"
+        }
+      ],
+      "dependencies": [
+        "@opam/msys2-mingw64@opam:1@87757bbf",
+        "@opam/msys2-mingw32@opam:1@3e920f82",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "@opam/msys2-mingw64@opam:1@87757bbf",
+        "@opam/msys2-mingw32@opam:1@3e920f82"
+      ]
+    },
+    "@opam/host-arch-x86_64@opam:1@b771ada1": {
+      "id": "@opam/host-arch-x86_64@opam:1@b771ada1",
+      "name": "@opam/host-arch-x86_64",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "host-arch-x86_64",
+          "version": "1",
+          "path": "esy.lock/opam/host-arch-x86_64.1"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/host-arch-x86_32@opam:1@5b6a4ac1": {
+      "id": "@opam/host-arch-x86_32@opam:1@5b6a4ac1",
+      "name": "@opam/host-arch-x86_32",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "host-arch-x86_32",
+          "version": "1",
+          "path": "esy.lock/opam/host-arch-x86_32.1"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/conf-sdl2@opam:1@40903048": {
+      "id": "@opam/conf-sdl2@opam:1@40903048",
+      "name": "@opam/conf-sdl2",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-sdl2",
+          "version": "1",
+          "path": "esy.lock/opam/conf-sdl2.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__conf_sdl2_opam__c__1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "@opam/conf-pkg-config@opam:3@d46a15ef",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9",
+        "@esy-ocaml/sdl2@github:esy-ocaml/SDL-mirror#4c156f3b581296674a8e245bfaabdc0b8eb5e3c4@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "@opam/conf-pkg-config@opam:3@d46a15ef": {
+      "id": "@opam/conf-pkg-config@opam:3@d46a15ef",
+      "name": "@opam/conf-pkg-config",
+      "version": "opam:3",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-pkg-config",
+          "version": "3",
+          "path": "esy.lock/opam/conf-pkg-config.3"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__conf_pkg_config_opam__c__3_opam_override"
+        }
+      ],
+      "dependencies": [
+        "esy-pkg-config@0.29.2002@d41d8cd9",
+        "@opam/host-arch-x86_64@opam:1@b771ada1",
+        "@opam/host-arch-x86_32@opam:1@5b6a4ac1",
+        "@opam/conf-mingw-w64-pkgconf-x86_64@opam:1@40c35c0b",
+        "@opam/conf-mingw-w64-pkgconf-i686@opam:1@b00fffb6",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "@opam/host-arch-x86_64@opam:1@b771ada1",
+        "@opam/host-arch-x86_32@opam:1@5b6a4ac1",
+        "@opam/conf-mingw-w64-pkgconf-x86_64@opam:1@40c35c0b",
+        "@opam/conf-mingw-w64-pkgconf-i686@opam:1@b00fffb6"
+      ]
+    },
+    "@opam/conf-mingw-w64-pkgconf-x86_64@opam:1@40c35c0b": {
+      "id": "@opam/conf-mingw-w64-pkgconf-x86_64@opam:1@40c35c0b",
+      "name": "@opam/conf-mingw-w64-pkgconf-x86_64",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-mingw-w64-pkgconf-x86_64",
+          "version": "1",
+          "path": "esy.lock/opam/conf-mingw-w64-pkgconf-x86_64.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__conf_mingw_w64_pkgconf_x86__64_opam__c__1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "@opam/msys2-mingw64@opam:1@87757bbf",
+        "@opam/msys2@opam:0.1.0@9a30ef2c", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "@opam/msys2-mingw64@opam:1@87757bbf" ]
+    },
+    "@opam/conf-mingw-w64-pkgconf-i686@opam:1@b00fffb6": {
+      "id": "@opam/conf-mingw-w64-pkgconf-i686@opam:1@b00fffb6",
+      "name": "@opam/conf-mingw-w64-pkgconf-i686",
+      "version": "opam:1",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-mingw-w64-pkgconf-i686",
+          "version": "1",
+          "path": "esy.lock/opam/conf-mingw-w64-pkgconf-i686.1"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__conf_mingw_w64_pkgconf_i686_opam__c__1_opam_override"
+        }
+      ],
+      "dependencies": [
+        "@opam/msys2-mingw32@opam:1@3e920f82",
+        "@opam/msys2@opam:0.1.0@9a30ef2c", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "@opam/msys2-mingw32@opam:1@3e920f82" ]
+    },
+    "@esy-ocaml/substs@0.0.1@d41d8cd9": {
+      "id": "@esy-ocaml/substs@0.0.1@d41d8cd9",
+      "name": "@esy-ocaml/substs",
+      "version": "0.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "@esy-ocaml/sdl2@github:esy-ocaml/SDL-mirror#4c156f3b581296674a8e245bfaabdc0b8eb5e3c4@d41d8cd9": {
+      "id": "@esy-ocaml/sdl2@github:esy-ocaml/SDL-mirror#4c156f3b581296674a8e245bfaabdc0b8eb5e3c4@d41d8cd9",
+      "name": "@esy-ocaml/sdl2",
+      "version": "github:esy-ocaml/SDL-mirror#4c156f3b581296674a8e245bfaabdc0b8eb5e3c4",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-ocaml/SDL-mirror#4c156f3b581296674a8e245bfaabdc0b8eb5e3c4"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
