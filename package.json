@@ -13,8 +13,8 @@
 		],
 		"buildsInSource": true,
 		"install": [
-			"make -C src findinstall",
-			"make -C src findinstall_h"
+			"make -C src install DESTDIR='#{self.install}'",
+			"make -C src install_h DESTDIR='#{self.install}'"
 		]
 	},
 	"dependencies": {
