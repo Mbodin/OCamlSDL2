@@ -280,6 +280,7 @@ install:
 	$(INSTALL_DIR) $(DESTDIR)
 	$(INSTALL_FILES) \
 	  *.cm[aix] *.cmx[as] sdl2*.a *sdl2*_stubs.* \
+	  META \
 	  $(DESTDIR)
 
 uninstall:

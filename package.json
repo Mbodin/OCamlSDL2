@@ -15,8 +15,8 @@
 		],
 		"buildsInSource": true,
 		"install": [
-			"make -C src install DESTDIR='#{self.install}/lib/sdl2/'",
-			"make -C src install_h DESTDIR='#{self.install}/lib/sdl2/'"
+			"make -C src install DESTDIR='#{self.lib}/sdl2/'",
+			"make -C src install_h DESTDIR='#{self.lib}/sdl2/'"
 		]
 	},
 	"dependencies": {
