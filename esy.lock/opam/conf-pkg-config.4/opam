@@ -9,8 +9,8 @@ depends: [
    "host-arch-x86_32" {os = "win32" & os-distribution = "msys2"} & "conf-mingw-w64-pkgconf-i686" {os = "win32" & os-distribution = "msys2"})
 ]
 build: [
-  ["pkg-config" "--help"] {os != "openbsd" & os != "win32"}
-  ["pkgconf" "--version"] {os = "win32" & os-distribution != "msys2"}
+  ["pkg-config" "--help"] {os != "openbsd" & os != "win32" & !(os = "macos" & os-distribution = "homebrew")}
+  ["pkgconf" "--version"] {(os = "win32" & os-distribution != "msys2") | (os = "macos" & os-distribution = "homebrew")}
 ]
 depexts: [
   ["pkg-config"] {os-family = "debian" | os-family = "ubuntu"}
@@ -22,7 +22,7 @@ depexts: [
   ["pkgconfig"] {os-distribution = "ol" & os-version <= "7"}
   ["pkgconf"] {os-distribution = "alpine"}
   ["pkg-config"] {os-distribution = "nixos"}
-  ["pkg-config"] {os = "macos" & os-distribution = "homebrew"}
+  ["pkgconf"] {os = "macos" & os-distribution = "homebrew"}
   ["pkgconfig"] {os = "macos" & os-distribution = "macports"}
   ["pkgconf"] {os = "freebsd"}
   ["pkgconf-pkg-config"] {os-distribution = "rhel" & os-version >= "8"}
